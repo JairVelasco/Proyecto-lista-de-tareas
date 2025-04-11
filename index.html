@@ -10,16 +10,23 @@
 <body>
 
 <div class="container my-5">
-    <h1 class="text-center">Lista de Tareas</h1>
+    <h1 class="text-center text-primary">Lista de Tareas</h1>
     <div class="row">
         <div class="col-md-8 offset-md-2">
             <!-- Etiqueta label para accesibilidad -->
-            <label for="taskInput" class="form-label">Nueva Tarea</label>
-            <input type="text" id="taskInput" class="form-control" placeholder="Escribe una nueva tarea" required>
-            <button class="btn btn-primary mt-3" id="addTaskBtn">Añadir Tarea</button>
-            <ul id="taskList" class="list-group mt-3"></ul>
-            <!-- Ocultar alerta inicialmente -->
-            <div class="alert alert-danger mt-3 d-none" id="emptyTaskAlert">No puedes agregar una tarea vacía</div>
+            <label for="taskInput" class="form-label fw-bold">Nueva Tarea</label>
+            <div class="input-group shadow-sm">
+                <input type="text" id="taskInput" class="form-control" placeholder="Escribe una nueva tarea" required>
+                <button class="btn btn-primary" id="addTaskBtn" aria-label="Añadir nueva tarea">Añadir</button>
+            </div>
+            <!-- Contenedor para la lista de tareas -->
+            <div class="mt-4 p-3 border rounded bg-light shadow-sm">
+                <ul id="taskList" class="list-group"></ul>
+            </div>
+            <!-- Alerta para tareas vacías -->
+            <div class="alert alert-danger mt-3 d-none" id="emptyTaskAlert" role="alert" aria-live="polite">
+                No puedes agregar una tarea vacía
+            </div>
         </div>
     </div>
 </div>
