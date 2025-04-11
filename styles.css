@@ -1,0 +1,50 @@
+.list-group-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    transition: background-color 0.3s ease; /* Agrega una transición para cambios de color */
+}
+
+.list-group-item-success {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.btn {
+    padding: 5px 10px;
+    font-size: 14px;
+    cursor: pointer; /* Asegúrate de que el cursor cambie al pasar sobre el botón */
+    border-radius: 3px; /* Agrega bordes redondeados para consistencia */
+}
+
+.btn-warning {
+    background-color: #ffc107;
+    color: #fff;
+    border: none;
+    transition: background-color 0.3s ease; /* Transición para hover */
+}
+
+.btn-warning:hover {
+    background-color: #e0a800; /* Color más oscuro al pasar el mouse */
+}
+
+.btn-danger {
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    transition: background-color 0.3s ease; /* Transición para hover */
+}
+
+.btn-danger:hover {
+    background-color: #c82333; /* Color más oscuro al pasar el mouse */
+}
+
+.active {
+    display: block;
+    color: red;
+    font-weight: bold; /* Resalta el texto activo */
+}
